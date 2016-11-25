@@ -12,3 +12,35 @@
 	margin-top: -5px;
 	height: 50px;
 }
+
+.slider{
+	position: relative;
+	height: 400px;
+
+}
+.item{
+	height: 400px;
+}
+.category{
+
+	width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+	margin: 45px;
+	background-color: #aab114;
+	font-size: 20px;
+
+}
+
+.col-md-5{
+	width: 500px;
+}
+
+.search{
+position: absolute;
+	height: 30px;
+	width: 110px;
+	box-sizing: border-box;
+	font-size: 20px;
+	margin-left: 600px;
+}

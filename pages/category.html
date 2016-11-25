@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Simple Shoppig Mart</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <!-- slider css-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.js"></script
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Mens Watch</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <div class="dropdown">
+            <button class="dropbtn">Mens <span class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+            <div class="dropdown-content">
+              <a href="#">Foot Ware</a>
+              <a href="#">Clothing</a>
+              <a href="#">Watches</a>
+              <a href="#">Accessories</a>
+              <a href="#">Official</a>
+              <a href="#">Casual</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Women <span class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+            <div class="dropdown-content">
+              <a href="#">Foot Ware</a>
+              <a href="#">Clothing</a>
+              <a href="#">Watches</a>
+              <a href="#">Accessories</a>
+              <a href="#">Official</a>
+              <a href="#">Casual</a>
+            </div>
+
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+
+    <div class="dropdown">
+      <button class="dropbtn category">Category <span class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+      <div class="dropdown-content">
+        <a href="#">Foot Ware</a>
+        <a href="#">Clothing</a>
+        <a href="#">Watches</a>
+        <a href="#">Accessories</a>
+        <a href="#">Official</a>
+        <a href="#">Casual</a>
+      </div>
+    </div>
+
+    <div class="search">
+      <button class="search box">Search <span class = "glyphicon glyphicon-search"></span></button>
+    </div>
+
+    <!-- <div class="price">
+      Price Range: <b>€ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>€ 1000</b>
+      <script>
+      var slider = new Slider('#ex2', {});
+      </script>
+    </div> -->
+
+
+<!--datetimepicker  -->
+<div class="container">
+    <div class='col-md-5'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-5'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+  <div class="panel panel-default">
+    <div class="panel-body" style="text-align: center;">
+    Brand
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="../images/omega.png"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Omega</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="../images/patek.png"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Patek</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="../images/jaeger.png"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Jaeger</div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+  <div class="panel panel-default">
+    <div class="panel-body" style="text-align: center;">
+      Gender
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="../images/men watch.png"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Men's Watch</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="../images/women watch.png"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Women's Watch</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="../images/kid watch.png"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Baby Watch</div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+  <div class="panel panel-default">
+    <div class="panel-body" style="text-align: center;">
+      Types
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="http://placehold.it/330x330"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Product 1</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="http://placehold.it/330x330"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Product 2</div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <a href="#"><img src="http://placehold.it/330x330"></a>
+    </div>
+    <div class="panel-footer" style="text-align: center;">Product 3</div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- footer  -->
+    <div class="footer" style="background-color: black; height: 80px;">
+      <div class="row">
+        <div class="col-md-8">&copy 2016 Sample E-commerce Nepal</div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-4"><img src="../images/mastercard.png" class="img-responsive" class="footer-img" style="height: 80px;"></div>
+            <div class="col-md-4"><img src="../images/visa.jpg"></div>
+            <div class="col-md-4"><img src="../images/paypal.jpg"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+    </body>
+  </html>
