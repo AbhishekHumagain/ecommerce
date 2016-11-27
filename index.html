@@ -17,21 +17,11 @@
 	    <script src="js/bootstrap.min.js"></script>
 	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	    <script src="js/ie10-viewport-bug-workaround.js"></script>
-		
-		<script>
-			function abc()
-			{
-			var arr=new Array("images/watch1.jpg", "images/watch2.jpg", "images/watch3.jpg", "images/watch4.jpg", "images/watch5.jpg",);
-			var ind=eval(document.f1.h1.value);
-			document.img.src=arr[ind];
-			document.f1.h1.value=ind+1;
-			if(document.f1.h1.value==5)
-			{
-			document.f1.h1.value=0;
-			}
-			}
-			setInterval("abc()",3000);
-		</script>
+
+
+
+
+
 	</head>
 	<body onload="abc()">
 		<div>
@@ -39,57 +29,83 @@
 			<nav class="navbar navbar-inverse navbar-fixed-top">
 			    <div class="container-fluid">
 			      	<div class="row">
-				      	<div class="col-md-4">
+				      	<div class="col-md-3">
 					        <div class="navbar-header" id="logo">
-					          <a class="navbar-brand" href="pages/category.html" style="padding-top: 10px;"><h4><b>WatchShopNepal</b></h4></a>
+					          <a class="navbar-brand" href="#" style="padding-top: 10px;"><h4><b>BikersNepal</b></h4></a>
 					        </div>
 					    </div>
-					    <div class="col-md-5" style="padding-left: 85px;">
+					    <div class="col-md-6" style="padding-left: 130px;">
 					        <div id="navbar" class="collapse navbar-collapse" >
 					        	<div class="dropdown" id="option-padding">
-					            	<button class="dropbtn">Mens<span style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+					            	<button class="dropbtn">Street<span style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
 					            	<div class="dropdown-content">
-					              		<a href="#">Foot Ware</a>
-					              		<a href="#">Clothing</a>
-					              		<a href="#">Watches</a>
-					              		<a href="#">Accessories</a>
-					              		<a href="#">Official</a>
-					              		<a href="#">Casual</a>
+					              		<a href="#">KTM</a>
+					              		<a href="#">Yahama</a>
+					              		<a href="#">Kawasaki</a>
+					              		<a href="#">Honda</a>
+					              		<a href="#">Suzuki</a>
+					              		<a href="#">Aprilia</a>
 					           		</div>
 					         	</div>
 
 					         	<div class="dropdown" style="padding-left: 10px;">
-						            <button class="dropbtn">Women<span  style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+						            <button class="dropbtn">Sports<span  style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
 						            <div class="dropdown-content">
-							            <a href="#">Foot Ware</a>
-							            <a href="#">Clothing</a>
-							            <a href="#">Watches</a>
-							            <a href="#">Accessories</a>
-							            <a href="#">Official</a>
-						                <a href="#">Casual</a>
+							            <a href="#">Ducati</a>
+							            <a href="#">MV Augusta</a>
+							            <a href="#">Honda</a>
+							            <a href="#">KTM</a>
+							            <a href="#">Yamaha</a>
+						                <a href="#">Suzuki</a>
 						            </div>
 						           <!-- //-->
 					         	</div>
 
 					         	<div class="dropdown"  style="padding-left: 10px;">
-						            <button class="dropbtn">Children<span  style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+						            <button class="dropbtn">Dirt<span  style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
 						            <div class="dropdown-content">
-							            <a href="#">Foot Ware</a>
-							            <a href="#">Clothing</a>
-							            <a href="#">Watches</a>
-							            <a href="#">Accessories</a>
-							            <a href="#">Official</a>
-						                <a href="#">Casual</a>
+							            <a href="#">Crossfire</a>
+							            <a href="#">KTM</a>
+							            <a href="#">Rieju</a>
+							            <a href="#">Hartford</a>
+							            <a href="#">Honda</a>
+						                <a href="#">Yamaha</a>
 						            </div>
 						           <!-- //-->
 					         	</div>
+
+					         	<div class="dropdown"  style="padding-left: 10px;">
+						            <button class="dropbtn">Classic<span  style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+						            <div class="dropdown-content">
+							            <a href="#">Royal Enfield</a>
+							            <a href="#">Ace</a>
+							            <a href="#">Italjet</a>
+							            <a href="#">Harley Davidson</a>
+							            <a href="#">Hero</a>
+
+						            </div>
+						           <!-- //-->
+					         	</div>
+
+					         	<!--<div class="dropdown"  style="padding-left: 10px;">
+						            <button class="dropbtn">Classic<span  style="padding-left: 3px;" class = "glyphicon glyphicon-triangle-bottom"></span> </button>
+						            <div class="dropdown-content">
+							            <a href="#">Royal Enfield</a>
+							            <a href="#">Ace</a>
+							            <a href="#">Italjet</a>
+							            <a href="#">Harley Davidson</a>
+							            <a href="#">Hero</a>
+
+						            </div>
+
+					         	</div>-->
 					        </div>
 				        </div><!--/.nav-collapse -->
 				        <div class="col-md-3">
 				        	<ul class="nav navbar-nav" >
 					            <li style="margin-left: -20px; padding-top: 5px;"><a href="#about">About</a></li>
-					            <li style="padding-left: 5px; padding-top: 5px;"><a href="#contact">Contact</a></li>
-					             <li style="padding-left: 5px; padding-top: 5px;"><a href="#portfolio">Portfolio</a></li>
+					            <li style="padding-left: 5px; padding-top: 5px;"><a href="pages/category.html">Category</a></li>
+					             <li style="padding-left: 5px; padding-top: 5px;"><a href="#portfolio">Contact</a></li>
 					            <li><a class="navbar-right" href="#" ><img id="cart" src="images/cart.png"
 					            class="img-responsive"></a></li>
 							</ul>
@@ -152,7 +168,16 @@
 
 				</div>
 
+				<!--<div id="Page"><img src="images/watch1.jpg" alt="" width="100%" height="615" name="img"/>
+					  <form name="f1">
+					 	 <input type="hidden" name="h1" value="0" />
+					  </form>
+					    <div id="Page_top">
+							 <p> <marquee behavior="scroll" direction="left" onmouseover="stop()" onmouseout="start()"><font color="#FFFF99"><h3><!--30%off on all summer wear...Hurry!!!</h3></font><font color="#00CC99"><h4>Enjoy the pleasure of shopping with Fashion Shop...</h4></font></marquee><br>
 
+							  </p>
+						</div>
+				</div>-->
 
 
 	    	</div><!-- /.container -->
