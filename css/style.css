@@ -5,17 +5,39 @@
 	padding-left: 200px;
 }
 
-.footer {
-	color: #FFFFFF;
-}
-.footer-img {
-	margin-top: -5px;
-	height: 50px;
+.footer-text {
+	padding-top: 50px;
+	color: grey;
 }
 
-.slider{
+.footer-img {
+	margin-top: -5px;
+
+}
+#cart {
+	height: 25px;
+	width: 40px;
+	padding-right: -20px;
+}
+#logo {
+	padding-left: 60px;
+}
+#payment-method {
+	padding: 5px;
+}
+.slider-img {
+	height: 630px;
+
+}
+.footer {
+
+	left: 0px;
+	bottom: -10px;
 	position: relative;
-	height: 400px;
+
+	background-color: #222222;
+	height: 90px;
+}
 
 }
 .item{
